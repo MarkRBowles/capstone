@@ -1,0 +1,26 @@
+/*Nav bar*/
+
+nav ul {
+	position: fixed;
+	height: 64px;
+	display: flex;
+	background-color: white;
+}
+
+.desktop {
+	display: block;
+}
+
+/*Media queries*/
+
+@media only screen and (min-width: 760px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .desktop {
+        display: none;
+    }
+}
