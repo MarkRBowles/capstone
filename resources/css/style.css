@@ -1,26 +1,97 @@
+/*General*/
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	background-color: #F2F2F2;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;	
+}
+
+h3 {
+	font-size: 1rem;
+	font-weight: bold;	
+}
+
+button {
+	background-color: #3B945E;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
 /*Nav bar*/
 
-nav ul {
-	position: fixed;
+nav {
 	height: 64px;
-	display: flex;
+	position: fixed;
+	width: 100%;
 	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.desktop {
-	display: block;
+nav ul.mobile {
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
 }
 
-/*Media queries*/
-
-@media only screen and (min-width: 760px) {
-    .mobile {
-        display: none;
-    }
+nav ul.desktop {
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 24px;
 }
 
-@media only screen and (max-width: 760px) {
-    .desktop {
-        display: none;
-    }
+nav ul li {
+	padding: 16px;
+}
+
+#logo {
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 760px) {
+	.mobile {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	.desktop {
+		display: none;
+	}
+}
+
+
+/*Banner*/
+
+.banner {
+	background-color: #65CCB8;
+	padding-top: 64px;
+}
+
+.banner img {
+	max-width: 60%;
+	margin: 32px 24px;
 }
