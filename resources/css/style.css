@@ -2,12 +2,14 @@
 html {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	background-color: #F2F2F2;
+	background-color: #DAD8D2;
+	color: #2D2C30;
 }
 
 h1 {
 	font-size: 3rem;
 	font-weight: bold;
+	color: #DAD8D2;
 }
 
 h2 {
@@ -16,7 +18,8 @@ h2 {
 }
 
 h3 {
-	font-size: 1rem;
+	color: #DAD8D2;
+	font-size: 1.5rem;
 	font-weight: bold;	
 }
 
@@ -26,11 +29,18 @@ button {
 
 .flex {
 	display: flex;
+	align-items: center;
+}
+
+.inline-flex {
+	display: inline-flex;
 }
 
 .flex-column {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .bold {
@@ -71,13 +81,13 @@ nav ul li {
 	font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 700px) {
 	.mobile {
 		display: none;
 	}
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 700px) {
 	.desktop {
 		display: none;
 	}
@@ -87,11 +97,45 @@ nav ul li {
 /*Banner*/
 
 .banner {
-	background-color: #65CCB8;
+	background-color: #576478;
 	padding-top: 64px;
 }
 
 .banner img {
 	max-width: 60%;
+	width: auto;
+	height: auto;
 	margin: 32px 24px;
+}
+
+.banner-text h3 {
+	margin-top: 32px;
+}
+
+.banner-text button {
+	margin-top: 24px;
+}
+
+.banner button {
+	padding: 8px 50px;
+	font-size: 1.5rem;
+	color: white;
+	border: none;
+}
+
+@media only screen and (max-width: 800px) {
+	.banner img {
+		margin: 0px;
+		max-width: 100%;
+	}
+
+	.flex {
+		flex-wrap: wrap;
+	}
+
+	.banner-text {
+		max-width: 100%;
+		margin: 32px 16px;
+	}
+
 }
