@@ -13,23 +13,44 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: bold;	
 }
 
 h3 {
-	color: #DAD8D2;
 	font-size: 1.5rem;
 	font-weight: bold;	
+}
+
+p {
+	font-family: Playfair, serif;
+	font-size: 1rem;
+}
+
+a {
+	font-family: Playfair, serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #AC6828;
+	transition-property: color;
+	transition-duration: 200ms;
+}
+
+a:hover {
+	color: #576478;
 }
 
 button {
 	background-color: #3B945E;
 }
 
+.attribution {
+	font-size: 0.8rem;
+	font-style: italic;
+}
+
 .flex {
 	display: flex;
-	align-items: center;
 }
 
 .inline-flex {
@@ -39,12 +60,22 @@ button {
 .flex-column {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .bold {
 	font-weight: bold;
+}
+
+@media only screen and (min-width: 800px) {
+	.mobile {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.desktop {
+		display: none;
+	}
 }
 
 
@@ -58,6 +89,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	box-shadow: 0px 0px 25px 0px;
 }
 
 nav ul.mobile {
@@ -81,24 +113,13 @@ nav ul li {
 	font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 700px) {
-	.mobile {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 700px) {
-	.desktop {
-		display: none;
-	}
-}
-
 
 /*Banner*/
 
 .banner {
 	background-color: #576478;
 	padding-top: 64px;
+	align-items: center;
 }
 
 .banner img {
@@ -108,7 +129,13 @@ nav ul li {
 	margin: 32px 24px;
 }
 
+.banner-text {
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
 .banner-text h3 {
+	color: #DAD8D2;
 	margin-top: 32px;
 }
 
@@ -117,7 +144,7 @@ nav ul li {
 }
 
 .banner button {
-	padding: 8px 50px;
+	padding: 8px 75px;
 	font-size: 1.5rem;
 	color: white;
 	border: none;
@@ -136,6 +163,80 @@ nav ul li {
 	.banner-text {
 		max-width: 100%;
 		margin: 32px 16px;
+	}
+
+}
+
+
+/*Information section*/
+
+.information {
+	justify-content: flex-start;
+	background-color: white;
+}
+
+.highlight {
+	padding: 32px 24px;
+	max-width: 60%;
+}
+
+.highlight img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.highlight h2 {
+	margin-top: 32px;
+}
+
+.highlight p {
+	margin-top: 24px;
+}
+
+.info-list {
+	max-width: 40%;
+	padding: 16px 0px;
+	justify-content: flex-start;
+}
+
+.info-item {
+	align-items: center;
+}
+
+.info-item img {
+	width: 35%;
+	height: auto;
+	margin: 16px;
+}
+
+.info-detail {
+	width: 65%;
+}
+
+.info-detail p {
+	margin: 8px 0px;
+}
+
+@media only screen and (max-width: 800px) {
+
+	.info-list {
+		max-width: 100%;
+		padding: 0px;
+	}	
+
+	.info-item {
+		margin: 16px 16px 64px 16px;
+	}
+
+	.info-item img {
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+
+	.info-detail {
+		padding: 16px;
 	}
 
 }
