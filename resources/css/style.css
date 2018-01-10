@@ -6,6 +6,11 @@ html {
 	color: #2D2C30;
 }
 
+/*body, nav {
+	max-width:1200px;
+	margin: 0 auto;
+}*/
+
 h1 {
 	font-size: 3rem;
 	font-weight: bold;
@@ -132,6 +137,7 @@ nav ul li {
 .banner-text {
 	justify-content: space-between;
 	align-items: flex-start;
+	margin-right: 24px;
 }
 
 .banner-text h3 {
@@ -237,6 +243,66 @@ nav ul li {
 
 	.info-detail {
 		padding: 16px;
+	}
+
+}
+
+
+/*Courses section*/
+
+.courses h2 {
+	padding: 16px;
+	text-align: center;
+}
+
+.course-list {
+	display: flex;
+	margin: 16px 40px;
+	max-width: 100%;
+	flex-wrap: wrap;
+}
+
+.course {
+	background-color: white;
+	margin: 16px;
+	max-width: 30%;
+}
+
+.course img {
+	height: auto;
+	width: 100%;
+}
+
+.course-text {
+	margin: 16px;
+}
+
+.course-text p {
+	padding-top: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+
+	.courses {
+		margin: 16px;
+	}
+
+	.courses h2 {
+		padding: 16px 0px 16px 0px;
+	}
+
+	.course-list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.course {
+		background-color: #3B945E;
+		color: white;
+		margin: 16px;
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
 	}
 
 }
