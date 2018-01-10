@@ -160,23 +160,31 @@
 	<!-- Thesis -->
 	<div class="thesis">
 		<h2>Thesis Exhibit</h2>
-		<div>
-			<video src="resources/videos/thesis.mp4"></video>
-			<div class="desktop">
-				<h3>Reimagine Urban</h3>
-				<p>"Cureabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo ledtus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, effictur dolor consequat, tristique ligula."</p>
+		<div class="thesis-content flex">
+			<div class="video-content">
+				<video id="video" controls>
+					<source src="resources/videos/thesis.mp4" type="video/mp4">
+				</video>
+				<div class="desktop">
+					<h3>Reimagine Urban</h3>
+					<p>"Cureabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo ledtus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, effictur dolor consequat, tristique ligula."</p>
+				</div>
 			</div>
-		</div>
-		<div class="info-list desk">
-			<div class="info-item">
-				<img src="resources/images/thesis-fisma.jpg">
-				<h3>Fisma: Design and Prototype</h3>
-				<p>Designer showcase of new prototype product</p>
-			</div>
-			<div class="info-item">
-				<img class="desktop" src="resources/images/thesis-now-and-then.jpg">
-				<h3>Now and then</h3>
-				<p>Research study about New York</p>
+			<div class="info-list desktop flex-column">
+				<div class="info-item flex">
+					<img src="resources/images/thesis-fisma.jpg">
+					<div class="info-detail flex-column">
+						<h3>Fisma: Design and Prototype</h3>
+						<p>Designer showcase of new prototype product</p>
+					</div>
+				</div>
+				<div class="info-item flex">
+					<img class="desktop" src="resources/images/thesis-now-and-then.jpg">
+					<div class="info-detail flex-column">
+						<h3>Now and then</h3>
+						<p>Research study about New York</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

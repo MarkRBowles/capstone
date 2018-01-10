@@ -306,3 +306,61 @@ nav ul li {
 	}
 
 }
+
+
+/*Thesis section*/
+
+.thesis {
+	margin: 16px 24px;
+}
+
+.thesis h2 {
+	padding: 16px;
+	text-align: center;
+}
+
+.thesis-content {
+	justify-content: flex-start;
+	margin: 16px;
+}
+
+.video-content {
+	width: 60%;
+	/*height: auto;*/
+}
+
+#video {
+	width: 100%;
+}
+
+.video-content h3 {
+	margin-top: 24px;
+}
+
+.video-content p {
+	margin-top: 8px;
+}
+
+.info-list {
+
+}
+
+@media only screen and (max-width: 800px) {
+
+	.video-content {
+		width: 100%;
+	}
+
+}
+
+
+/*Footer*/
+
+footer {
+	font-family: Playfair, serif;
+	background-color: #576478;
+	color: #DAD8D2;
+	padding: 16px 24px; 
+	text-align: left;
+	font-size: 0.8rem;
+}
